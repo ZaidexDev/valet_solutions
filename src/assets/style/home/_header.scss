@@ -1,0 +1,157 @@
+
+
+
+header {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(251,15,90);
+    background: linear-gradient(131deg, rgba(251,15,90,1) 0%, rgba(27,186,255,1) 44%, rgba(7,28,77,1) 100%);
+    background-size: 1000% 1000%;
+    background-position: 0% 0%;
+    padding: 0 50px;
+    overflow: hidden !important;
+    position: relative;
+    animation: headerBG 30s ease 0s infinite alternate both;
+    perspective: 600px;
+
+    .header-title-section {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: $textColorLight;
+        position: relative;
+        z-index: 1;
+
+        
+
+        
+
+
+        .title {
+            // font-size: 42px;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+        
+        .desc {
+            font-size: 18px;
+            text-transform: capitalize;
+            font-weight: 500;
+            color: $textColorMidd;
+        }
+
+        .form-box {
+            width: 100%;
+            height: 60px;
+            margin: 25px 0;
+
+            input {
+                width: 70%;
+                height: 100%;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                box-shadow: inset 0 0 20px $otherOrange;
+                padding: 15px 25px;
+                color: $textColorLight;
+                border-radius: 2em 0 0 2em;
+                font-weight: 600;
+            }
+            button {
+                width: 30%;
+                height: 100%;
+                border: none;
+                outline: none;
+                background-color: $darkLight;
+                color: $textColorLight;
+                border-radius: 0 2em 2em 0;
+                box-shadow: inset 0 0 20px $otherSky, 0 0 20px $otherSky;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .hero-1-dots-orange {
+        width: 100%;
+        height: 75%;
+        position: absolute;
+        right: -50px;
+        bottom: 0;
+        // background: url("../img/page-header-bg.svg") no-repeat bottom right;
+        background: url("../img/dot-shape-color.svg") no-repeat bottom right;
+        background-size: contain;
+        z-index: 0;
+
+        /* Medium devices (tablets, 768px and up) */
+        @media (max-width: 991.98px) {
+            height: 50%;
+        }
+
+    }
+
+    .hero-2-laptop {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        right: 50px;
+        bottom: 0;
+        background: url("../img/mac-screen.png") no-repeat center;
+        background-size: contain;
+        z-index: 0;
+
+        /* Medium devices (tablets, 768px and up) */
+        @media (max-width: 991.98px) {
+            display: none;
+        }
+
+    }
+
+    // &::after {
+    //     content: '';
+    //     width: 50%;
+    //     height: 100%;
+    //     position: absolute;
+    //     right: 50px;
+    //     bottom: 0;
+    //     background: url("../img/mac-screen.png") no-repeat center;
+    //     background-size: contain;
+    //     z-index: 0;
+
+    //     /* Medium devices (tablets, 768px and up) */
+    //     @media (max-width: 991.98px) {
+    //         display: none;
+    //     }
+    // }
+
+
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background: url("../img/dot-dot-wave-shape.svg") no-repeat;
+        background-size: 100% 100%;
+    }
+    
+}
+
+
+@keyframes headerBG {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}

@@ -1,0 +1,13 @@
+
+/*|||||||||| [CONFIG] ||||||||||*/
+@import './config/variables';
+@import './config/functions';
+@import './config/globals';
+
+
+/*|||||||||| [GLOBAL STYLES] ||||||||||*/
+@import './global/navbar';
+
+
+/*|||||||||| [PAGE STYLES] ||||||||||*/
+@import './home/home';

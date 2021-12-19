@@ -1,0 +1,40 @@
+
+
+
+/* || RESET UL || */
+@mixin resetUL {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+/* || HOVER GRADIENT LINE || */
+@mixin hoverGradient {
+    background: rgb(251,15,90);
+    background: linear-gradient(90deg, rgba(251,15,90,1) 0%, rgba(7,28,77,1) 88%);
+}
+
+
+/* || RESET A || */
+@mixin resetA {
+    display: inline-block;
+    color: initial;
+    text-decoration: none;
+}
+
+
+
+/* || FLEX CENTER || */
+@mixin flexCenterColumn() {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: space-evenly !important;
+}
+
+
+@mixin mainTransitin {
+    transition: all 0.3s ease-in-out;
+}
